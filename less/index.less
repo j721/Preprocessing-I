@@ -91,17 +91,20 @@ header{
 	color: @heading-color;
 	background-color: antiquewhite;
 	.centered();
-}
 
-h1{
-	font-family: @heading-font;
-	font-size: 4rem;
-}
+		h1{
+			font-family: @heading-font;
+			font-size: 4rem;
+		}
+		// This closes h1
 
-h2, {
-	padding:1%;
-	font-size: 21px;
+		h2 {
+			padding:1%;
+			font-size: 21px;
+		}
+		// This closes h2
 }
+// This closes the header
 
 
 
@@ -131,12 +134,16 @@ div{
 		width: 40%;
 		.column();
 	}
+	// This closes left-content
 
 	.right-content{
 		.column();
 		width:40%;
 	}
+	// This closes right-content
 }
+// This closes content
+
 
 // Mobile Version
 @media(max-width:500px){
@@ -156,3 +163,4 @@ div{
 				text-align: center;
 			}	
 }
+// This closes the media query for the left-content and right-content

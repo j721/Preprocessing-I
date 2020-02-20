@@ -144,7 +144,8 @@ table {
   font-display: swap;
   src: local('Saira SemiCondensed Regular'), local('SairaSemiCondensed-Regular'), url(https://fonts.gstatic.com/s/sairasemicondensed/v5/U9MD6c-2-nnJkHxyCjRcnMHcWVWV1cWRRX8MaOM.ttf) format('truetype');
 }
-html {
+html,
+body {
   height: 100%;
 }
 body {
@@ -172,6 +173,45 @@ ul,
 p {
   font-family: 'Abel', sans-serif;
   font-size: 23px;
-  color: #4795da;
-  background-color: #cdece5;
+  color: #445182;
+  padding-top: 1%;
+}
+div {
+  padding: 2%;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  padding-top: 2%;
+}
+.content .left-content {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.content .right-content {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+@media (max-width: 500px) {
+  .content {
+    display: block;
+  }
+  .left-content {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+.right-content {
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }

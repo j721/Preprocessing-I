@@ -60,7 +60,7 @@ table {
 @main-font: 'Abel', sans-serif;
 @heading-font: 'Saira Semi Condensed', sans-serif;
 @heading-color: #d48383;
-@paragraph-color: #4795da;
+@paragraph-color: #445182;
 
 // Mixins
 .centered(){
@@ -68,12 +68,14 @@ table {
 	justify-content:center;
 	align-items: center;
   }
-.background(){
-	background-color: #cdece5;
+
+.column(){
+	display:flex;
+	flex-direction:column;
 }
 
 
-html {
+html,body {
     height: 100%;
 }
 
@@ -105,10 +107,46 @@ ul, p{
 	font-family: @main-font;
 	font-size: 23px;
 	color: @paragraph-color;
-	.background();
+	padding-top:1%;
+}
+
+div{
+	padding: 2%;
+}
+
+
+.content{
+	display:flex;
+	justify-content: center;
+	padding-top: 2%;
+
+	.left-content{
+		width: 40%;
+		.column();
+	}
+
+	.right-content{
+		.column();
+		width:40%;
+	}
 }
 
 // Mobile Version
 @media(max-width:500px){
-
+	.content{
+		display:block;
+	
+		.left-content{
+				width: 100%;
+				flex-direction: column;
+				.centered();
+				text-align: center;
+			}
+			.right-content{
+				width: 100%;
+				flex-direction: column;
+				.centered();
+				text-align: center;
+			}	
 }
+

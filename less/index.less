@@ -59,10 +59,18 @@ table {
 
 @main-font: 'Abel', sans-serif;
 @heading-font: 'Saira Semi Condensed', sans-serif;
-@heading-color: white;
-@paragraph-color: pink;
+@heading-color: #d48383;
+@paragraph-color: #4795da;
 
 // Mixins
+.centered(){
+	display:flex;
+	justify-content:center;
+	align-items: center;
+  }
+.background(){
+	background-color: #cdece5;
+}
 
 
 html {
@@ -75,8 +83,12 @@ body{
 }
 
 header{
-	display-flex;
-	justify-content;
+	display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+	color: @heading-color;
+	background-color: antiquewhite;
+	.centered();
 }
 
 h1{
@@ -84,10 +96,16 @@ h1{
 	font-size: 4rem;
 }
 
+h3{
+	font-size: 35px;
+    color: #5f3f19;
+}
 
-p{
+ul, p{
 	font-family: @main-font;
 	font-size: 23px;
+	color: @paragraph-color;
+	.background();
 }
 
 // Mobile Version

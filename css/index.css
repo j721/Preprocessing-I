@@ -151,12 +151,27 @@ body {
   background-color: #c1c0ffc4;
   border: 20px solid white;
 }
-h1,
-h2 {
+header {
+  justify-content: space-around;
+  flex-direction: column;
+  color: #d48383;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
   font-family: 'Saira Semi Condensed', sans-serif;
   font-size: 4rem;
 }
+h3 {
+  font-size: 35px;
+  color: #5f3f19;
+}
+ul,
 p {
   font-family: 'Abel', sans-serif;
   font-size: 23px;
+  color: #4795da;
+  background-color: #cdece5;
 }

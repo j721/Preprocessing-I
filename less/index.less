@@ -130,37 +130,41 @@ div{
 	justify-content: center;
 	padding-top: 2%;
 
+	@media(max-width:500px){
+		.content{
+			display:block;
+		}
+// This closes the media query for content
+
 	.left-content{
 		width: 40%;
 		.column();
+	}
+		@media(max-width:500px){
+			width: 100%;
+			flex-direction: column;
+			.centered();
+			text-align: center;
+		}
+		// This closes the media query for left-content
 	}
 	// This closes left-content
 
 	.right-content{
 		.column();
 		width:40%;
+
+		@media(max-width: 500px){
+			width: 100%;
+			flex-direction: column;
+			.centered();
+			text-align: center;
+		}
+// This closes the media query for right-content
+
 	}
 	// This closes right-content
 }
 // This closes content
 
 
-// Mobile Version
-@media(max-width:500px){
-	.content{
-		display:block;
-	
-		.left-content{
-				width: 100%;
-				flex-direction: column;
-				.centered();
-				text-align: center;
-			}
-			.right-content{
-				width: 100%;
-				flex-direction: column;
-				.centered();
-				text-align: center;
-			}	
-}
-// This closes the media query for the left-content and right-content

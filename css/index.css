@@ -147,10 +147,10 @@ table {
 html,
 body {
   height: 100%;
+  margin: 0 auto;
 }
 body {
   background-color: #c1c0ffc4;
-  border: 20px solid white;
 }
 header {
   justify-content: space-around;
@@ -161,9 +161,13 @@ header {
   justify-content: center;
   align-items: center;
 }
-h1 {
+header h1 {
   font-family: 'Saira Semi Condensed', sans-serif;
   font-size: 4rem;
+}
+header h2 {
+  padding: 1%;
+  font-size: 21px;
 }
 h3 {
   font-size: 35px;
@@ -184,21 +188,18 @@ div {
   justify-content: center;
   padding-top: 2%;
 }
-.content .left-content {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-}
-.content .right-content {
-  display: flex;
-  flex-direction: column;
-  width: 40%;
-}
 @media (max-width: 500px) {
-  .content {
+  .content .content {
     display: block;
   }
-  .left-content {
+  .content .left-content {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) and (max-width: 500px) {
+  .content {
     width: 100%;
     flex-direction: column;
     display: flex;
@@ -207,11 +208,18 @@ div {
     text-align: center;
   }
 }
-.right-content {
-  width: 100%;
-  flex-direction: column;
+.content .right-content {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  flex-direction: column;
+  width: 40%;
+}
+@media (max-width: 500px) {
+  .content .right-content {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 }

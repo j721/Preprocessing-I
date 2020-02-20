@@ -53,11 +53,17 @@ table {
     box-sizing: border-box;
 }
 
+
+
+@import url('https://fonts.googleapis.com/css?family=Abel|Saira+Semi+Condensed&display=swap');
+
+@main-font: 'Abel', sans-serif;
+@heading-font: 'Saira Semi Condensed', sans-serif;
+@heading-color: white;
+@paragraph-color:
+
 // Mixins
-.centered(){
-	display:flex;
-	justify-content: center;
-}
+
 
 html, body {
     height: 100%;
@@ -65,8 +71,21 @@ html, body {
 
 body{
 	background-color:#c1c0ffc4;
+	border: 20px solid white; 
 }
 
 .left-content{
-
+	.centered();
 }
+
+h1, h2{
+	font-family: @heading-font;
+	font-size: 3rem;
+}
+
+p{
+	font-family: @main-font;
+	font-size: 2rem;
+}
+
+
